@@ -1,0 +1,2 @@
+## Export AD group members to CSV file
+Get-AdGroupMember -identity 'DG-Epic Analysts' -Server bmc.bmcroot.bmc.org | Export-csv -path C:\tmp2\DG-Epic_Analysts.csv -NoTypeInformation

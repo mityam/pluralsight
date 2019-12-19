@@ -2,4 +2,4 @@
 Get-AdGroupMember -identity 'DG-Epic Analysts' -Server bmc.bmcroot.bmc.org | Export-csv -path C:\tmp2\DG-Epic_Analysts.csv -NoTypeInformation
 
 ## Check number of files in a folder every 5 sec
-while ($true) {Start-Sleep -Seconds 1.5; Write-Host ( dir e:\tmp1 | Measure-Object ).Count }
+while ($true) {Start-Sleep -Seconds 5; Write-Host ( dir e:\tmp1 | Measure-Object ).Count }
